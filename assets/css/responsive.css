@@ -57,17 +57,17 @@
     .debug{
         background-color: green;
     }
-        /* ----------MAIN---------- */
-        .left-column{
-            width: 50px;
-            height: calc(100vh - 85px); /* 100% - media-control */
-        }
+    /* ----------MAIN---------- */
+    .left-column{
+        width: 50px;
+        height: calc(100vh - 85px); /* 100% - media-control */
+    }
+
+    .main-region{
+        width: calc(100% - 50px); /* 100% - left-column */
+    }
     
-        .main-region{
-            width: calc(100% - 50px); /* 100% - left-column */
-        }
-        
-        .top-transparent{
-            width: calc(100% - 50px); /* 100% - left-column */
-        }
+    .top-transparent{
+        width: calc(100% - 50px); /* 100% - left-column */
+    }
 }
