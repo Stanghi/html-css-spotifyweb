@@ -3,11 +3,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* outline: 2px solid red;*/
+    /* outline: 2px solid red; */
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
+    color: #717171;
     overflow: hidden;
 }
 
@@ -22,33 +23,49 @@ body{
 }
 
 /* ---------------COMPONENTS--------------- */
+.btn{
+    padding: 15px 40px;
+    color: #FCFCFC;
+    font-size: .8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+}
 
 /* ---------------HEADER--------------- */
-
+/* no content */
 
 /* ---------------MAIN--------------- */
 .left-column{
     width: 300px; /* DA LEVARE */
-    height: calc(100vh - 85px); /* 100% genitore - media-control */
+    height: calc(100vh - 85px); /* 100% - media-control */
+    background-color: #000000;
 }
 
 .main-region{
-    width: 100%;
+    width: calc(100% - 300px); /* 100% - left-column */
 }
 
 .top-transparent{
     position: fixed;
-    width: 100%;
+    align-items: center;
+    justify-content: end;
+    padding-right: 25px;
+    width: calc(100% - 300px); /* 100% - left-column */
     height: 85px;
+    background-color: rgba(0, 0, 0, .50);
 }
 
 .navigate{
-    padding-top: 85px;
+    padding: 85px 50px 0; /* top|right-left|bottom */
     overflow: auto;
-    height: calc(100vh - 85px); /* 100% genitore - media-control */
+    height: calc(100vh - 85px); /* 100vh - top-transparent */
+    background-color: #141922; /* DA LEVARE */
 }
 
 /* ---------------FOOTER--------------- */
 .media-control{
     height: 90px;
+    background-color: #282828; /* DA LEVARE */
 }
