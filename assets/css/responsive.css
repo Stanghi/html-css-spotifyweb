@@ -28,7 +28,7 @@
     .box{
         transform: scale(.9);
         width: calc(100% / 4);
-        aspect-ratio: 1 / 1;
+        padding-right: 0;
     }
 }
 
@@ -38,13 +38,12 @@
     .box{
         transform: scale(.9);
         width: calc(100% / 2);
-        aspect-ratio: 1 / 1;
     }
 }
 
 
 /* -------------------------xs------------------------- */
-@media screen and (max-width:425px){
+@media screen and (max-width:552px){
     .left-column{
         width: 50px;
         height: calc(100vh - 85px); /* 100% - media-control */

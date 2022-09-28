@@ -49,17 +49,18 @@ img{
     border-radius: 50px;
 }
 
-.row{
-    gap: 0 20px;
-}
-
 .box{
     width: calc(100% / 6);
     text-align: center;
+    padding-right: 20px;
+}
+
+.box:last-child{
+    padding-right: 0;
 }
 
 .song-box{
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 /* ---------------HEADER--------------- */
@@ -107,7 +108,7 @@ img{
 }
 
 .nav-navigate ul li{
-    padding: 10px 15px;
+    padding: 10px;
     text-transform: uppercase;
     font-size: .8rem;
     font-weight: bold;
