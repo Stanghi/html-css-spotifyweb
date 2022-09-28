@@ -47,7 +47,7 @@ body{
 
 .box{
     width: 175px;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
     text-align: center;
 }
 
@@ -55,7 +55,7 @@ body{
     width: 175px;
     height: 175px;
     border-radius: 50%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
     text-align: center;
 }
 
@@ -106,7 +106,6 @@ body{
 
 .nav-navigate ul{
     display: flex;
-    flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 45px;
     list-style: none;
@@ -127,7 +126,15 @@ body{
 /* -----big-box----- */
 .big-box{
     padding-bottom: 40px;
-    row-gap: 10px;
+}
+
+.row{
+    gap: 50px;
+}
+
+.song-box{
+    width: 100%;
+    height: 100%;
 }
 
 .big-box h2 + p{
@@ -140,12 +147,6 @@ body{
 
 #special-h2{
     padding-bottom: 30px;
-}
-
-/* -----row-recently----- */
-.row{
-    gap: 5%;
-    flex-wrap: wrap;
 }
 
 /* ---------------FOOTER--------------- */
