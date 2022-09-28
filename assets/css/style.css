@@ -124,26 +124,28 @@ body{
     color: #717171;
 }
 
-/* -----recently-played----- */
-.recently-played{
+/* -----big-box----- */
+.big-box{
     padding-bottom: 40px;
+    row-gap: 10px;
 }
 
-.recently-played h2{
+.big-box h2 + p{
+    padding-top: 10px;
+}
+
+.big-box > p{
     padding-bottom: 30px;
 }
 
-/* -----created-for----- */
-.created-for{
-    padding-bottom: 40px;
-}
-
-.created-for h2{
-    padding-bottom: 10px;
-}
-
-.created-for > p{
+#special-h2{
     padding-bottom: 30px;
+}
+
+/* -----row-recently----- */
+.row{
+    gap: 5%;
+    flex-wrap: wrap;
 }
 
 /* ---------------FOOTER--------------- */
