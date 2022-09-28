@@ -70,7 +70,7 @@ img{
     color: #EFF0F0;
     font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .box span{
@@ -132,7 +132,7 @@ img{
 
 /* -----big-box----- */
 .big-box{
-    padding-bottom: 100px;
+    padding-bottom: 40px;
 }
 
 .row{
