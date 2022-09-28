@@ -1,9 +1,5 @@
 /* -------------------------M------------------------- */
 @media screen and (max-width:878px){
-    .debug{
-        background-color: yellow;
-    }
-
     /* ----------MAIN---------- */
     .left-column{
         width: 214px;
@@ -39,11 +35,6 @@
 
 /* -------------------------S------------------------- */
 @media screen and (max-width:639px){
-    .debug{
-        background-color: blue;
-    }
-
-    /* ----------Navigate---------- */
     .box{
         transform: scale(.9);
         width: calc(100% / 2);
@@ -54,10 +45,6 @@
 
 /* -------------------------xs------------------------- */
 @media screen and (max-width:425px){
-    .debug{
-        background-color: green;
-    }
-    /* ----------MAIN---------- */
     .left-column{
         width: 50px;
         height: calc(100vh - 85px); /* 100% - media-control */
