@@ -110,6 +110,10 @@ img{
     font-weight: bold;
 }
 
+.nav-navigate ul li a:hover{
+    color: #FFFFFF;
+}
+
 .nav-navigate ul li a{
     text-decoration: none;
     color: #717171;
@@ -154,8 +158,9 @@ img{
     filter: brightness(50%);
 }
 
-.song-box:hover i{
+.box:hover i, .box{
     display: block;
+    cursor: pointer;
 }
 
 #special-h2{
