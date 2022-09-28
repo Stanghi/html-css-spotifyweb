@@ -49,33 +49,17 @@ img{
     border-radius: 50px;
 }
 
-.navigate h2{
-    color: #FFFFFF;
+.row{
+    gap: 0 20px;
 }
 
 .box{
-    width: 250px;
-    height: 100%;
-    aspect-ratio: 1 / 1;
+    width: calc(100% / 6);
     text-align: center;
 }
 
 .song-box{
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
-}
-
-.box p{
-    color: #EFF0F0;
-    font-size: 1rem;
-    font-weight: bold;
     margin-bottom: 5px;
-}
-
-.box span{
-    font-size: .7rem;
-    font-weight: bold;
 }
 
 /* ---------------HEADER--------------- */
@@ -83,13 +67,13 @@ img{
 
 /* ---------------MAIN--------------- */
 .left-column{
-    width: 300px; /* DA LEVARE */
+    width: 300px;
     height: calc(100vh - 85px); /* 100% - media-control */
     background-color: #000000;
 }
 
 .main-region{
-    width: calc(100% - 300px); /* 100% - left-column */
+    width: calc(100vw - 300px); /* 100% - left-column */
 }
 
 .top-transparent{
@@ -97,7 +81,7 @@ img{
     align-items: center;
     justify-content: end;
     padding-right: 25px;
-    width: calc(100% - 300px); /* 100% - left-column */
+    width: calc(100vw - 300px); /* 100% - left-column */
     height: 85px;
     background-color: rgba(0, 0, 0, .50);
 }
@@ -106,10 +90,14 @@ img{
 .navigate{
     padding: 85px 20px 0;  /* top-right-bottom */
     overflow: auto;
-    width: 100%;
+    width: 100vw;
     height: calc(100vh - 85px); /* 100vh - top-transparent */
     background-color: #141922;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+}
+
+.navigate h2{
+    color: #FFFFFF;
 }
 
 .nav-navigate ul{
@@ -135,17 +123,24 @@ img{
     padding-bottom: 40px;
 }
 
-.row{
-    gap: 0 20px;
-}
-
-
 .big-box h2 + p{
     padding-top: 10px;
 }
 
 .big-box > p{
     padding-bottom: 30px;
+}
+
+.box p{
+    color: #EFF0F0;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.box span{
+    font-size: .7rem;
+    font-weight: bold;
 }
 
 #special-h2{
