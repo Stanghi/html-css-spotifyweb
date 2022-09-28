@@ -30,6 +30,10 @@ body{
     position: fixed;
 }
 
+.circle{
+    border-radius: 50%;
+}
+
 /* ---------------COMPONENTS--------------- */
 .btn{
     padding: 15px 40px;
@@ -51,25 +55,12 @@ body{
     text-align: center;
 }
 
-.box-circle{
-    width: 175px;
-    height: 175px;
-    border-radius: 50%;
-    aspect-ratio: 1 / 1;
-    text-align: center;
-}
-
 .box p{
     color: #EFF0F0;
     font-size: 1.1rem;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px;
-}
-
-.song-box{
-    width: 175px;
-    height: 175px;
 }
 
 /* ---------------HEADER--------------- */
@@ -87,6 +78,7 @@ body{
 }
 
 .top-transparent{
+    z-index: 999;
     align-items: center;
     justify-content: end;
     padding-right: 25px;
@@ -97,24 +89,24 @@ body{
 
 /* -----navigate----- */
 .navigate{
-    padding: 85px 20px 0;
+    padding: 85px 20px 0;  /* top-right-bottom */
     overflow: auto;
-    width: 100%; /* 100% - left-column */
+    width: 100%;
     height: calc(100vh - 85px); /* 100vh - top-transparent */
     background-color: #141922;
+    overflow-x: hidden;
 }
 
 .nav-navigate ul{
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 45px;
+    margin: 20px 0 45px 0; /* top-right-bottom-left */
     list-style: none;
 }
 
 .nav-navigate ul li{
-    padding: 0 25px;
+    padding: 10px 15px;
     text-transform: uppercase;
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: bold;
 }
 
@@ -129,7 +121,7 @@ body{
 }
 
 .row{
-    gap: 50px;
+    gap: 0 50px;
 }
 
 .song-box{
