@@ -55,12 +55,9 @@ img{
     padding-right: 20px;
 }
 
-.box:last-child{
-    padding-right: 0;
-}
-
 .song-box{
     margin-bottom: 20px;
+    position: relative;
 }
 
 /* ---------------HEADER--------------- */
@@ -94,7 +91,6 @@ img{
     width: 100vw;
     height: calc(100vh - 85px); /* 100vh - top-transparent */
     background-color: #141922;
-    /* overflow-x: hidden; */
 }
 
 .navigate h2{
@@ -142,6 +138,24 @@ img{
 .box span{
     font-size: .7rem;
     font-weight: bold;
+}
+
+.song-box i{
+    display: none;
+    position: absolute;
+    font-size: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #EFF0F0;
+}
+
+.song-box:hover img{
+    filter: brightness(50%);
+}
+
+.song-box:hover i{
+    display: block;
 }
 
 #special-h2{
