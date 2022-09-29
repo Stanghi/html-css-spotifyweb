@@ -29,6 +29,12 @@
         width: calc(100% / 4);
         padding-right: 0;
     }
+
+    .box p{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
 }
 
 /* -------------------------MEDIUM------------------------- */
