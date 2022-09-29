@@ -35,6 +35,9 @@
         white-space: nowrap;
         overflow: hidden;
     }
+
+    /* ----------media-control---------- */
+
 }
 
 /* -------------------------MEDIUM------------------------- */
@@ -42,6 +45,11 @@
     .box{
         transform: scale(.9);
         width: calc(100% / 2);
+    }
+
+    /* ----------media-control---------- */
+    .media-control-left .left-icon{
+        flex-direction: column;
     }
 }
 

@@ -51,11 +51,9 @@ img{
     text-transform: uppercase;
     border: 2px solid #FFFFFF;
     border-radius: 50px;
+    backdrop-filter: blur(10px);
 }
 
-.btn:hover{
-    transform: scale(1.1);
-}
 
 .box{
     width: calc(100% / 6);
@@ -90,7 +88,7 @@ img{
 }
 
 .top-transparent{
-    z-index: 999;
+    z-index: 998;
     align-items: center;
     justify-content: end;
     padding-right: 25px;
@@ -155,7 +153,7 @@ img{
     font-weight: bold;
 }
 
-.playlist-bottom{ /* PROBLEMA QUI */
+.playlist-bottom{
     max-height: calc(100vh - 535px);
     overflow: auto;
 }
@@ -263,15 +261,17 @@ img{
 
 /* ---------------FOOTER--------------- */
 .media-control{
+    z-index: 999;
     width: 100%;
     height: 90px;
     background-color: #282828;
     justify-content: space-between;
+    padding: 15px;
 }
 
 /* -----left side----- */
 #song-at-the-moment{
-    padding: 20px 10px;
+    padding-right: 10px;
 }
 
 .song-name{
@@ -322,7 +322,6 @@ img{
 }
 
 .time{
-    padding: 5px 20px;
     align-items: center;
 }
 
@@ -330,7 +329,6 @@ img{
     color: #C1C1C1;
     font-size: .8rem;
     font-weight: bold;
-    padding: 0 20px;
 }
 
 .progressive-bar{
@@ -338,6 +336,7 @@ img{
     background-color: #5A5A5A;
     height: 5px;
     border-radius: 35px;
+    margin: 0 20px;
 }
 
 .progressive-bar-audio{
@@ -362,4 +361,33 @@ img{
 .media-control-right i{
     padding-right: 15px;
     color: #C1C1C1;
+}
+
+/* ---------------HOVER--------------- */
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.left-column li:hover a,
+.playlist-top:hover i,
+.playlist-top:hover span,
+.account p:hover,
+.media-control i:hover{
+    color: #C1C1C1;
+    cursor: pointer;
+}
+
+.song-name:hover span{
+    color: #C1C1C1;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#play-control:hover{
+    transform: scale(1.2);
+}
+
+.progressive-bar:hover .progressive-bar-inside,
+.progressive-bar-audio:hover .progressive-bar-inside{
+    background-color: #5A762B;
 }
