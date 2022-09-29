@@ -38,6 +38,7 @@
 
     /* ----------media-control---------- */
 
+
 }
 
 /* -------------------------MEDIUM------------------------- */
@@ -48,8 +49,9 @@
     }
 
     /* ----------media-control---------- */
-    .media-control-left .left-icon{
+    .left-icon{
         flex-direction: column;
+        justify-content: center;
     }
 }
 

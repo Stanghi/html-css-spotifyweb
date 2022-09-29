@@ -159,19 +159,45 @@ img{
 
 .account-top{
     border-bottom: 2px solid #4D4D4D;
+    margin-bottom: 15px;
 }
 
-.account img{
+.account-bottom{
+    display: inline-block;
+}
+
+.account-top img{
     width: 20px;
     vertical-align: middle;
-    padding: 15px 0px;
+    padding: 10px 0px;
 }
 
-.account p{
+.account-bottom img{
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: #808080;
+    width: 35px;
+    height: 35px;
+}
+
+.account-bottom img:hover{
+    cursor: pointer;
+}
+
+.account-top p{
     display: inline-block;
+    padding: 10px 0px;
     font-size: .8rem;
     font-weight: bold;
     margin-left: 10px;
+}
+
+.account-bottom p{
+    font-size: 1.1rem;
+    padding: 0 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: inline-block;
 }
 
 /* -----navigate----- */
@@ -191,7 +217,6 @@ img{
     display: flex;
     margin: 20px 0 45px 0; /* top-right-bottom-left */
     list-style: none;
-    white-space: nowrap;
 }
 
 .nav-navigate ul li{
@@ -247,9 +272,10 @@ img{
 
 .song-box:hover img{
     filter: brightness(50%);
+    cursor: pointer;
 }
 
-.box:hover i, .box{
+.song-box:hover i{
     display: block;
     cursor: pointer;
 }
@@ -275,7 +301,7 @@ img{
 
 .song-name{
     flex-direction: column;
-    padding-right: 50px;
+    padding-right: 25px;
     justify-content: center;
 }
 
@@ -302,7 +328,11 @@ img{
 /* -----center side----- */
 .media-control-center{
     flex-direction: column;
-    justify-content: center;
+    width: calc(100% / 3);
+}
+
+.media-control-left{
+    width: calc(100% / 3);
 }
 
 .control{
@@ -313,7 +343,7 @@ img{
 .control i{
     font-size: 1.3rem;
     color: #C1C1C1;
-    padding: 5px 20px;
+    padding: 5px 15px;
 }
 
 #play-control{
@@ -322,6 +352,7 @@ img{
 
 .time{
     align-items: center;
+    justify-content: center;
 }
 
 .time span{
@@ -359,6 +390,8 @@ img{
 }
 
 .media-control-right{
+    justify-content: flex-end;
+    width: calc(100% / 3);
     padding: 20px;
     align-items: center;
 }
