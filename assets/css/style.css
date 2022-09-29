@@ -409,7 +409,7 @@ img{
     cursor: pointer;
 }
 
-.left-column li:hover a,
+.left-column a:hover,
 .playlist-top:hover i,
 .playlist-top:hover span,
 .account p:hover,
