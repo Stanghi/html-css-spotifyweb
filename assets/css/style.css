@@ -155,7 +155,7 @@ img{
 }
 
 .playlist-bottom{ /* PROBLEMA QUI */
-    max-height: 300px; /* DA TOGLIERE */
+    max-height: calc(100vh - 535px);
     overflow: auto;
 }
 
