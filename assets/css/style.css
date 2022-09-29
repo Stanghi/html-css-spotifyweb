@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* outline: 2px solid red; */
+    /*outline: 2px solid red;*/
 }
 
 body{
@@ -97,7 +97,7 @@ img{
 }
 
 /* -----left-column----- */
-.left-column #logo{
+#logo{
     width: 130px;
     margin-bottom: 30px;
 }
@@ -180,10 +180,6 @@ img{
     height: 35px;
 }
 
-.account-bottom img:hover{
-    cursor: pointer;
-}
-
 .account-top p{
     display: inline-block;
     padding: 10px 0px;
@@ -231,10 +227,6 @@ img{
     color: #717171;
 }
 
-.nav-navigate ul li a:hover{
-    color: #FFFFFF;
-}
-
 /* -----big-box----- */
 .big-box{
     padding-bottom: 40px;
@@ -270,16 +262,6 @@ img{
     color: #EFF0F0;
 }
 
-.song-box:hover img{
-    filter: brightness(50%);
-    cursor: pointer;
-}
-
-.song-box:hover i{
-    display: block;
-    cursor: pointer;
-}
-
 #special-h2{
     padding-bottom: 30px;
 }
@@ -291,18 +273,23 @@ img{
     height: 90px;
     background-color: #282828;
     justify-content: space-between;
-    padding: 15px;
 }
 
 /* -----left side----- */
-#song-at-the-moment{
-    padding-right: 10px;
+.media-control-left{
+    padding: 15px;
+    align-items: center;
+}
+
+.song-at-the-moment {
+    width: 50px;
+    margin-right: 10px;
 }
 
 .song-name{
     flex-direction: column;
-    padding-right: 25px;
     justify-content: center;
+    margin-right: 10px;
 }
 
 .song-name p{
@@ -314,25 +301,22 @@ img{
 .song-name span{
     font-size: .7rem;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .left-icon{
-    align-items: center;
-}
+    margin-left: 65px;
 
+}
 .left-icon i{
-    padding-right: 15px;
     font-size: 1.2rem;
+    padding-right: 10px;
 }
 
 /* -----center side----- */
 .media-control-center{
     flex-direction: column;
-    width: calc(100% / 3);
-}
-
-.media-control-left{
-    width: calc(100% / 3);
+    padding: 15px;
 }
 
 .control{
@@ -389,10 +373,10 @@ img{
     display: none;
 }
 
+/* -----right side----- */
 .media-control-right{
     justify-content: flex-end;
-    width: calc(100% / 3);
-    padding: 20px;
+    padding: 15px;
     align-items: center;
 }
 
@@ -404,6 +388,24 @@ img{
 /* ---------------HOVER--------------- */
 .btn:hover{
     transform: scale(1.1);
+}
+
+.nav-navigate ul li a:hover{
+    color: #FFFFFF;
+}
+
+#logo:hover{
+    cursor: pointer;
+}
+
+.song-box:hover i{
+    display: block;
+    cursor: pointer;
+}
+
+.song-box:hover img{
+    filter: brightness(50%);
+    cursor: pointer;
 }
 
 .left-column li:hover a,
@@ -418,6 +420,10 @@ img{
 .song-name:hover span{
     color: #C1C1C1;
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.account-bottom img:hover{
     cursor: pointer;
 }
 

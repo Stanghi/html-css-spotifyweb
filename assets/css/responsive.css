@@ -38,11 +38,10 @@
 
     /* ----------media-control---------- */
 
-
 }
 
 /* -------------------------MEDIUM------------------------- */
-@media screen and (max-width:639px){
+@media screen and (max-width:640px){
     .box{
         transform: scale(.9);
         width: calc(100% / 2);
@@ -53,13 +52,19 @@
         flex-direction: column;
         justify-content: center;
     }
+
+    .left-icon i{
+        padding: 5px;
+    }
 }
 
 /* -------------------------SMALL------------------------- */
-@media screen and (max-width:552px){
+@media screen and (max-width:500px){
     .left-column{
         width: 50px;
         height: calc(100vh - 85px); /* 100vh - media-control */
+        padding: 10px;
+        align-items:  center;
     }
 
     .main-region{
@@ -76,7 +81,12 @@
     
     #logo-small{
         display: block;
+        margin-top: 10px;
         margin-bottom: 20px;
+    }
+
+    #logo-small:hover{
+        cursor: pointer;
     }
 
     .nav-left-column ul li a{
@@ -84,26 +94,32 @@
     }
 
     .nav-left-column img{
-        transform: scale(2.5);
+        transform: scale(1.5);
     }
 
     .playlist{
         display: none;
     }
 
+    .account{
+        align-items:  center;
+    }
+
     .account-top{
         border: none;
     }
-
+    
     .account p{
         display: none;
     }
 
-    .account img{
-        transform: scale(1.5);
+    #profile{
+        height: 30px;
     }
 
-    .account #profile{
-        transform: scale(2.5);
+     /* ----------media-control---------- */   
+     .song-name span{
+
+        white-space: inherit;
     }
 }
