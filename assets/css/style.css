@@ -231,7 +231,7 @@ img{
 .song-box i{
     display: none;
     position: absolute;
-    font-size: 3rem;
+    font-size: 4rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
