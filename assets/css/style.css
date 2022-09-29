@@ -153,8 +153,6 @@ img{
 .playlist-bottom{ /* PROBLEMA QUI */
     max-height: 300px; /* DA TOGLIERE */
     overflow: auto;
-
-    background-color: lightgreen;
 }
 
 .account{
@@ -264,15 +262,11 @@ img{
     justify-content: space-between;
 }
 
-.media-control-group{
+/* -----left side----- */
+#song-at-the-moment{
     padding: 20px 10px;
 }
 
-.media-control-group img{
-    margin-right: 15px;
-}
-
-/* -----left side----- */
 .song-name{
     flex-direction: column;
     padding-right: 50px;
@@ -297,4 +291,51 @@ img{
 .left-icon i{
     padding-right: 15px;
     font-size: 1.2rem;
+}
+
+/* -----center side----- */
+.media-control-center{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.control{
+    align-items: center;
+    justify-content: center;
+}
+
+.control i{
+    font-size: 1.3rem;
+    color: #C1C1C1;
+    padding: 5px 20px;
+}
+
+#play-control{
+    font-size: 2rem;
+}
+
+.time{
+    padding: 5px 20px;
+    align-items: center;
+}
+
+.time span{
+    color: #C1C1C1;
+    font-size: .8rem;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+.progressive-bar{
+    width: 420px;
+    background-color: #5A5A5A;
+    height: 5px;
+    border-radius: 35px;
+}
+
+.progressive-bar-inside{
+    width: 25%;
+    background-color: #C1C1C1;
+    height: 5px;
+    border-radius: 35px;
 }
