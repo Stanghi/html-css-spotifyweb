@@ -270,7 +270,7 @@ img{
 /* ---------------FOOTER--------------- */
 .media-control{
     z-index: 999;
-    width: 100%;
+    width: 100vw;
     height: 90px;
     background-color: #282828;
     justify-content: space-between;
@@ -280,6 +280,7 @@ img{
 .media-control-left{
     padding: 15px;
     align-items: center;
+    width: calc(100% / 3);
 }
 
 .song-at-the-moment {
@@ -310,7 +311,6 @@ img{
 
 }
 .left-icon i{
-    font-size: 1.2rem;
     padding-right: 10px;
 }
 
@@ -318,6 +318,7 @@ img{
 .media-control-center{
     flex-direction: column;
     padding: 15px;
+    width: calc(100% / 3);
 }
 
 .control{
@@ -326,13 +327,12 @@ img{
 }
 
 .control i{
-    font-size: 1.3rem;
     color: #C1C1C1;
     padding: 5px 15px;
 }
 
 #play-control{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .time{
@@ -347,7 +347,7 @@ img{
 }
 
 .progressive-bar{
-    width: 420px;
+    width: 90%;
     background-color: #5A5A5A;
     height: 5px;
     border-radius: 35px;
@@ -355,7 +355,7 @@ img{
 }
 
 .progressive-bar-audio{
-    width: 110px;
+    width: 25%;
     background-color: #5A5A5A;
     height: 5px;
     border-radius: 35px;
@@ -376,12 +376,14 @@ img{
 
 /* -----right side----- */
 .media-control-right{
-    justify-content: flex-end;
     padding: 15px;
     align-items: center;
+    width: calc(100% / 3);
+    justify-content: flex-end;
 }
 
-.media-control-right > i{
+/* .media-control-right > i */
+.right-icon i{
     padding-right: 15px;
     color: #C1C1C1;
 }
