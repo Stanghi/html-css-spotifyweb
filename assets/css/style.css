@@ -12,6 +12,10 @@ body{
     overflow: hidden;
 }
 
+main{
+    height: calc(100vh - 90px); /* 100vh - media-control */
+}
+
 img{
     max-width: 100%;
 }
@@ -70,30 +74,106 @@ img{
 /* ---------------MAIN--------------- */
 .left-column{
     width: 300px;
-    height: calc(100vh - 85px); /* 100% - media-control */
     background-color: #000000;
+    padding: 20px 20px 0px 20px; /* top-right-bottom-left */
+    flex-direction: column;
+    height: calc(100vh - 90px); /* 100vh - media-control */
+    justify-content: space-between;
+}
+
+.left-column .account{
+    justify-content: flex-end;
 }
 
 .main-region{
-    width: calc(100vw - 300px); /* 100% - left-column */
+    width: calc(100vw - 300px); /* 100vw - left-column */
 }
 
 .top-transparent{
-    z-index: 999;
     align-items: center;
     justify-content: end;
     padding-right: 25px;
-    width: calc(100vw - 300px); /* 100% - left-column */
+    width: 100%;
     height: 85px;
     background-color: rgba(0, 0, 0, .50);
+}
+
+/* -----left-column----- */
+.left-column #logo{
+    width: 130px;
+    margin-bottom: 30px;
+}
+
+.nav-left-column img{
+    width: 20px;
+    vertical-align: middle;
+}
+
+.left-column ul{
+    list-style: none;
+}
+
+.left-column ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.left-column ul li a{
+    text-decoration: none;
+    color: #717171;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.playlist{
+    flex-direction: column;
+}
+
+.playlist-top{
+    margin: 20px 0;
+}
+
+.playlist h3{
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.playlist i{
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.playlist span{
+    font-weight: bold;
+}
+
+.playlist-bottom{ /* PROBLEMA QUI */
+    max-height: 500px; /* DA TOGLIERE */
+    overflow: auto;
+}
+
+.account-top{
+    padding: 10px 0;
+    border-bottom: 1px solid #4D4D4D;
+}
+
+.account-bottom{
+    padding: 10px 0;
+}
+
+.account img{
+    width: 20px;
+    margin-right: 10px;
 }
 
 /* -----navigate----- */
 .navigate{
     padding: 85px 20px 0;  /* top-right-bottom */
-    overflow: auto;
-    width: 100vw;
     height: calc(100vh - 85px); /* 100vh - top-transparent */
+    overflow: auto;
     background-color: #141922;
 }
 
@@ -114,13 +194,13 @@ img{
     font-weight: bold;
 }
 
-.nav-navigate ul li a:hover{
-    color: #FFFFFF;
-}
-
 .nav-navigate ul li a{
     text-decoration: none;
     color: #717171;
+}
+
+.nav-navigate ul li a:hover{
+    color: #FFFFFF;
 }
 
 /* -----big-box----- */
@@ -151,7 +231,7 @@ img{
 .song-box i{
     display: none;
     position: absolute;
-    font-size: 5rem;
+    font-size: 3rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
