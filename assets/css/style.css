@@ -94,6 +94,7 @@ img{
     width: calc(100vw - 300px); /* 100vw - left-column */
     height: 85px;
     background-color: rgba(0, 0, 0, .50);
+    backdrop-filter: blur(10px);
 }
 
 /* -----left-column----- */
