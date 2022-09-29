@@ -75,7 +75,7 @@ img{
 .left-column{
     width: 300px;
     background-color: #000000;
-    padding: 20px 20px 0px 20px; /* top-right-bottom-left */
+    padding: 20px;
     flex-direction: column;
     height: calc(100vh - 90px); /* 100vh - media-control */
     justify-content: space-between;
@@ -102,6 +102,10 @@ img{
 .left-column #logo{
     width: 130px;
     margin-bottom: 30px;
+}
+
+#logo-small{
+    display: none;
 }
 
 .nav-left-column img{
@@ -155,27 +159,28 @@ img{
     overflow: auto;
 }
 
-.account{
-}
-
 .account-top{
-    padding: 10px 0;
-    border-bottom: 1px solid #4D4D4D;
-}
-
-.account-bottom{
-    padding: 10px 0;
+    border-bottom: 2px solid #4D4D4D;
 }
 
 .account img{
     width: 20px;
-    margin-right: 10px;
+    vertical-align: middle;
+    padding: 15px 0px;
+}
+
+.account p{
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: bold;
+    margin-left: 10px;
 }
 
 /* -----navigate----- */
 .navigate{
     padding: 85px 20px 0;  /* top-right-bottom */
     height: calc(100vh - 85px); /* 100vh - top-transparent */
+    width: 100vw;
     overflow: auto;
     background-color: #141922;
 }

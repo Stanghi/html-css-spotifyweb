@@ -53,4 +53,41 @@
     .top-transparent{
         width: calc(100% - 50px); /* 100% - left-column */
     }
+
+    #logo{
+        display: none;
+    }
+    
+    #logo-small{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .nav-left-column ul li a{
+        display: none;
+    }
+
+    .nav-left-column img{
+        transform: scale(2.5);
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .account-top{
+        border: none;
+    }
+
+    .account p{
+        display: none;
+    }
+
+    .account img{
+        transform: scale(1.5);
+    }
+
+    .account #profile{
+        transform: scale(2.5);
+    }
 }
