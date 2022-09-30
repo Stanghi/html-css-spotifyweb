@@ -65,13 +65,6 @@ img{
     position: relative;
 }
 
-.active{
-    margin: 3px auto;
-    background-color: #ADFF2F;
-    width: 30px;
-    height: 2px;
-}
-
 .active-column{
     position: absolute;
     left: 0;
@@ -243,6 +236,15 @@ img{
     text-decoration: none;
     color: #717171;
 }
+
+.nav-navigate .active::after{
+    content: '';
+    display: block;
+    margin: 3px auto 0;
+    height: 2px;
+    width: 30px;
+    background-color: #ADFF2F;
+  }
 
 /* -----big-box----- */
 .big-box{
