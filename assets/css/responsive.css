@@ -114,6 +114,10 @@
         display: none;
     }
 
+    .active-column{
+        display: none;
+    }
+
     .nav-left-column img{
         transform: scale(1.5);
     }

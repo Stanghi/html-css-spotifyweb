@@ -65,6 +65,22 @@ img{
     position: relative;
 }
 
+.active{
+    margin: 3px auto;
+    background-color: #ADFF2F;
+    width: 30px;
+    height: 2px;
+}
+
+.active-column{
+    position: absolute;
+    left: 0;
+    margin: 3px auto;
+    background-color: #ADFF2F;
+    width: 3px;
+    height: 20px;
+}
+
 /* ---------------HEADER--------------- */
 /* no content */
 
